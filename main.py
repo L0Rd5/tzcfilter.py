@@ -1,0 +1,27 @@
+import datetime
+def timezone():
+	hour = datetime.datetime.utcnow().hour
+	if hour==1:timezone=-120
+	if hour==2:timezone=-180
+	if hour==3:timezone=-240
+	if hour==4:timezone=-300
+	if hour==5:timezone=-360
+	if hour==6:timezone=-420
+	if hour==7:timezone=-480
+	if hour==8:timezone=-540
+	if hour==9:timezone=-600
+	if hour==10:timezone=-660
+	if hour==11:timezone=-720
+	if hour==12:timezone=-780
+	if hour==13:timezone=+600
+	if hour==14:timezone=+540
+	if hour==15:timezone=+480
+	if hour==16:timezone=+420
+	if hour==17:timezone=+360
+	if hour==18:timezone=+300	
+	if hour==19:timezone=+240
+	if hour==20:timezone=+180
+	if hour==21:timezone=+120
+	if hour==22:timezone=+60
+	if hour==23:timezone=+0
+	return timezone
